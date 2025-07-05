@@ -1,0 +1,46 @@
+﻿<Window x:Class="ApiDashboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:widgets="clr-namespace:ApiDashboard.Widgets"
+        Title="API Dashboard" Height="600" Width="800">
+
+    <Window.Resources>
+        <!-- Shadow Effect -->
+        <DropShadowEffect x:Key="DropShadowEffect"
+                          BlurRadius="10"
+                          ShadowDepth="2"
+                          Direction="270"
+                          Opacity="0.2"/>
+
+        <!-- Hover Style -->
+        <Style x:Key="HoverableBorder" TargetType="Border">
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="1.02" ScaleY="1.02"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="BorderBrush" Value="#2563eb"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#e0f2fe" Offset="0.0"/>
+            <GradientStop Color="#f8fafc" Offset="1.0"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <WrapPanel x:Name="WidgetPanel" Margin="12"/>
+    </ScrollViewer>
+</Window>

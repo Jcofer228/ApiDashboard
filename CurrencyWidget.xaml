@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="ApiDashboard.Widgets.CurrencyWidget"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Width="250" Height="180">
+    <Border Style="{StaticResource HoverableBorder}"
+            Background="White"
+            CornerRadius="16"
+            Padding="16"
+            Margin="12"
+            BorderBrush="#dbeafe"
+            BorderThickness="1"
+            Effect="{StaticResource DropShadowEffect}">
+        <StackPanel>
+            <TextBlock Text="💱 Exchange Rates"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Foreground="#2563eb"
+                       Margin="0,0,0,8"/>
+            <TextBlock x:Name="UsdToEurText"
+                       FontSize="14"
+                       FontWeight="SemiBold"
+                       Foreground="#1e3a8a"/>
+            <TextBlock x:Name="UsdToGbpText"
+                       FontSize="14"
+                       FontWeight="SemiBold"
+                       Foreground="#1e3a8a"/>
+            <TextBlock x:Name="UsdToJpyText"
+                       FontSize="14"
+                       FontWeight="SemiBold"
+                       Foreground="#1e3a8a"/>
+            <TextBlock Text="* updated every 5 mins"
+                       FontSize="11"
+                       Foreground="#64748b"
+                       Margin="0,8,0,0"/>
+        </StackPanel>
+    </Border>
+</UserControl>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\jcofe\source\repos\ApiDashboard\ApiDashboard\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Widgets\CryptoWidget.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Widgets\CurrencyWidget.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Widgets\LocationWidget.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Widgets\NewsWidget.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Widgets\WeatherWidget.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Widgets\WorldClockWidget.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Widgets\CryptoWidget.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Widgets\CurrencyWidget.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Widgets\LocationWidget.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Widgets\NewsWidget.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Widgets\WeatherWidget.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Widgets\WorldClockWidget.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
