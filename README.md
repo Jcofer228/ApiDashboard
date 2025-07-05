@@ -3,7 +3,7 @@
 **A real-time, modular WPF desktop dashboard built with .NET 8**  
 Created by **Jeffrey Cofer** on **July 4, 2025**
 
-![screenshot](screenshot.png)
+
 
 ---
 
